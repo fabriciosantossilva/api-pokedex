@@ -1,6 +1,5 @@
 package br.com.fabricio.pokedex.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -21,11 +20,7 @@ import br.com.fabricio.pokedex.models.PokemonType;
 import br.com.fabricio.pokedex.repositories.PokemonTypeRepository;
 import br.com.fabricio.pokedex.services.PokemonTypeService;
 import jakarta.validation.Valid;
-import jakarta.websocket.server.PathParam;
-
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController

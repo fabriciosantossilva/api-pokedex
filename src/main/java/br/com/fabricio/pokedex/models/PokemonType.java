@@ -11,6 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Data
@@ -18,6 +19,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "TB_POKEMON_TYPE")
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 public class PokemonType extends RepresentationModel<PokemonType> {
 
     @Id
