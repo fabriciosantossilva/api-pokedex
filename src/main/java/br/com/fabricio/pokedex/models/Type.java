@@ -2,8 +2,6 @@ package br.com.fabricio.pokedex.models;
 
 import java.util.UUID;
 
-import org.springframework.hateoas.RepresentationModel;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,11 +14,11 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name = "TB_POKEMON_TYPE")
+@Table(name = "TB_TYPES")
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class PokemonType extends RepresentationModel<PokemonType> {
+public class Type {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
